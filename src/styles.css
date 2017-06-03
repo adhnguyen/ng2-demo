@@ -1,0 +1,11 @@
+h2 {
+  color: #1796d2;
+}
+
+button, a {
+  min-width: 100px;
+}
+
+.container {
+  top: 150px;
+}

@@ -1,0 +1,24 @@
+<div class="col-sm-6 offset-sm-3">
+    <h2>Login</h2>
+    <form>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" 
+            class="form-control" 
+            name="username" required
+            [(ngModel)]="model.username" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" 
+            class="form-control" 
+            name="password" required
+            [(ngModel)]="model.password" />
+        </div>
+        <div class="alert alert-danger" [hidden]="!showMessage">{{errorMessage}}</div>
+        <div class="form-group">
+            <button type="button" class="btn btn-success" (click)="login()">Login</button>
+            <button [routerLink]="['/register']" class="btn btn-primary">Register</button>
+        </div>
+    </form>
+</div>
